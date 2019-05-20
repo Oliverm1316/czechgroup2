@@ -1,0 +1,329 @@
+
+---
+title: <br><br><center>FINE TIME GROUP BARCELONA<center>
+author: "FINE TIME"
+date: "`r Sys.Date()`"
+output:
+  rmdformats::readthedown:
+    highlight: kate
+---
+
+
+
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = https://www.finetime.cz><img src ="LOGO.jpg" width="150" vspace="50" align="right"></A>') 
+    }); 
+</script> 
+
+```{r knitr_init, echo=FALSE, cache=FALSE, message= FALSE,warning=FALSE}
+library(knitr)
+library(rmdformats)
+
+## Global options
+options(max.print="75")
+opts_chunk$set(echo=FALSE,
+	             cache=TRUE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE)
+opts_knit$set(width=750)
+```
+
+
+
+```{r echo=FALSE, message=FALSE,warning=FALSE}
+library(readxl)
+library(shiny)
+library(dplyr)
+library(knitr)
+```
+
+## Accommodation
+
+### _**Main Hotel: GALLERY HOTEL - 4* sup **_
+
+**Gallery Hotel** is a boutique hotel located in the heart of Barcelona, next to Paseo de Gracia, a 3 -minute walking from La Pedrera and to the most exclusive shops of Passeig de Gracia.
+
+This **4-star superior hotel** of Barcelona, with 25 years of experience, offers spacious and bright rooms and very last detail is taken care of to guarantee that you feel at home.
+
+This charming hotel offers a wide selection of gastronomic specialties in the centre of Barcelona where you can enjoy the fine culinary delights in the **restaurant SINTONIA** with its pleasant terrace-garden, savour the assortment of tapas in the Bar The Gallery Space or choose from our original cocktail menu on our rooftop terrace The TOP.
+
+
+<img src = "https://s-ec.bstatic.com/images/hotel/max1024x768/125/125260888.jpg" width="360"> <img src = "https://static.dayuse.com/hotels/333-11029/797_533/6949fb5867177ebecffb9b63eb0c0e43-gallery-hotel.png" width="360" align="right"> 
+
+
+<img src = "https://www.galleryhotel.com/_images/gallery/5/4663_gallery.jpg">
+
+
+### **Alternative Hotels** {.tabset .tabset-fade .tabset-pills}
+
+#### **H10 CUBIK - 4* sup **
+
+Opened in 2015, the **H10 Cubik** is an exclusive, **four-star superior** hotel located in the heart of Barcelona, just a few feet away from the cathedral and the city's historic centre. The hotel is in a modern building which comprises geometric shapes and is reminiscent of the brutalist architecture of the mid-twentieth century. Its cutting-edge interior design includes futuristic touches and pure colours, as well as being flooded with natural light thanks to its large windows. The hotel offers large, bright rooms, the Market restaurant, Robotik Bar and the Atik terrace located on the eighth floor with a plunge pool and spectacular panoramic views of the city.
+
+<img src = "https://cmspro.h10hotels.com/ImagenesHotel/12.Habitacion%20Classic%20vista%20interior%20hck.jpg" width="360"> <img src = "https://cmspro.h10hotels.com/ImagenesHotel/Terraza%20superior%20de%20dia_0017%20retocada.jpg" width="360" align="right">
+
+<img src = "https://cmspro.h10hotels.com/ImagenesHotel/Lobby,%20Lobby%20bar%201.jpg"> 
+
+#### **H10 METROPOLITAN - 4* sup **
+
+Opened in 2014, the **H10 Metropolitan** is an exclusive hotel housed in one of the city centre's historical buildings, which has been completely renovated and decorated by the prestigious interior designer Lázaro Rosa-Violán in a style that harks back to the industrial Barcelona of the 19th century. As well as its modern rooms, this four star superior establishment includes **The Kitchen Restaurant**, the **Edén Bar** with access to a pleasant **terrace with swimming pool**, and a **top-floor terrace with plunge pool** that offers views of Plaça Catalunya and Tibidabo.
+The bright and modern 85 rooms at the **H10 Metropolitan** are equipped with high-end amenities and excusive features for an unforgettable stay. All rooms include **Rituals amenities**
+The **H10 Metropolitan** has two meeting rooms equipped with everything you need to hold busi¬ness meetings or any type of event. Furthermore, our outdoor garden is ideal for holding drinks receptions, coffee-breaks and other events in a unique and re¬laxed surrounding. 
+
+<img src = "https://pix5.agoda.net/agaff/aff.bstatic.com/images/hotel/max1024x768/366/36602293.jpg" width="360">
+<img src = "https://y.cdrst.com/foto/hotel-sf/57ee6/granderesp/hotel-h10-metropolitan-general-3d39af8.jpg" width="340" align="right">
+
+
+<img src = "https://cmspro.h10hotels.com/ImagenesHotel/Detalles-lobby-1.jpg">
+
+
+
+#### **OLIVIA PLAZA - 4* SUP**
+
+**The Olivia Plaza Hotel** is a magnificent 4-star boutique hotel in Plaça Catalunya, right in the centre of Barcelona. The **Olivia Plaza** has a garden, restaurant, parking, terraces and meeting rooms as well as free Wi-Fi. Its 113 guest rooms have views of **Plaça Catalunya and the Gothic Quarter**, to ensure you enjoy an exclusive, unforgettable stay in Barcelona. All rooms are soundproofed to make sure guests get their rest despite being right in the city centre. There are also six spaces for business meetings, celebrations, parties and corporate events. Guests have access to the Holmes Place Urquinaona gym. At the **Olivia Plaza Hotel** you’ll also find the Nineteen Restaurant with an outdoor terrace. 
+
+<img src = "https://t-ec.bstatic.com/images/hotel/max1024x768/929/92968232.jpg" width="360"> <img src = "https://u.tfstatic.com/restaurant_photos/395/5395/169/612/nineteen-hotel-olivia-plaza-vista-exterior-9213a.jpg" width="360" align="right">
+
+<img src = "https://d1rioy1v9s51jr.cloudfront.net/pics/818/900x540/hotel-olivia-plaza-1_1534.jpg"> 
+
+#### **CATALONIA EIXAMPLE - 4* **
+
+This fantastic hotel, **formerly Catalonia Berna**, is located in the city's historic centre, **next to Plaza Cataluña**. Situated in one of the first buildings in the enlargement ("Eixample") of the city of Barcelona.
+
+It was designated a **Historical Monument** thanks to its interesting eclectic classical style. It is the only building that conserves the wealth of paintings and decorations on the original front, which have been fully restored. On the Modernist Route, it is located very close to Paseo de Gracia and the busiest commercial area of Barcelona.
+
+<img src = "https://storage.googleapis.com/static-content-hc/sites/default/files/ceixample1864-piscina--282-29_1.jpg" width="360"> <img src = "https://storage.googleapis.com/static-content-hc/sites/default/files/cataloniaeixample1864-terra.jpg" width="360" align="right">
+
+<img src = "https://storage.googleapis.com/static-content-hc/sites/default/files/cberna-fachada-detalle-02_3.jpg"> 
+
+
+#### **CATALONIA MAGDALENES - 4* **
+
+Located in the heart of Barcelona, **Catalonia Magdalenes** hotel tucked between the **Portal de l'Angel** and Via Laietana shopping streets in the city’s **Gothic Quarter** and steps from Las Ramblas, Plaza Catalunya and the Cathedral. A quiet oasis, where guests can choose to relax in the hotel spa with hammam and massages or enjoy the view over the centre of Barcelona on the magnificent rooftop terrace with a glass-enclosed pool, sun deck and snack bar in summer. The hotel also offers a fitness room. Complete and varied breakfast buffet with chef stations, free snacks, lobby bar and terrace bar open during the summer months. Internet corner and free Wi-Fi throughout the hotel. The rooms has **free smartphone**.
+
+
+<img src = "https://storage.googleapis.com/static-content-hc/sites/default/files/cataloniamagdalenes-junio2016--2818-29.jpg" width="360"> <img src = "https://storage.googleapis.com/static-content-hc/sites/default/files/premium-deluxe-eixample-piscina-galeria.jpg" width="360" align="right">
+
+<img src = "https://storage.googleapis.com/static-content-hc/sites/default/files/cataloniamagdalenes-hall_1.jpg"> 
+
+
+
+## Programme
+
+### **Programme Overview and timeline**
+
+```{r echo=FALSE, message=FALSE,warning=FALSE}
+library(timevis)
+library(dplyr)
+library(readxl)
+
+timeline <- read_excel("timeline.xlsx", sheet = "Sheet1", 
+    col_types = c("date", 
+        "text", "text", "numeric", "text", 
+        "text"))
+
+data <- data.frame( id = 1:length(timeline$start),
+                    start = as.POSIXlt(timeline$start),
+                    content = timeline$content,
+                    group = timeline$group,
+                    type = "box",
+                    style = "background-color:#FF9933;")
+
+groups = data.frame(id = 1:4, content = c("Morning", "Lunch", "Afternoon", "Diner"))
+
+tl <- timevis(data, groups, showZoom = TRUE, zoomFactor = 0.2, fit = TRUE, width = '100%', height = 300)
+
+tl %>% setOptions(list(orientation = "top", align = "left"))
+
+```
+
+
+### **Map**
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+
+library(leaflet)
+library(stringr)
+library(ggmap)
+library(readxl)
+library(dplyr)
+library(leaflet.extras)
+library(shiny)
+
+coordinates <- read_excel("timeline.xlsx", 
+    sheet = "Sheet3", col_types = c("text", 
+        "text", "numeric", "numeric", "text", 
+        "text"))
+
+coordinates$Category <- factor(coordinates$Category)
+
+m <- coordinates %>% 
+  leaflet(options = leafletOptions(dragging = TRUE,
+  minZoom = 14, maxZoom = 18)) %>% 
+  addProviderTiles("Esri") %>% 
+  setView(lng = 2.1687300, lat = 41.3863900, zoom = 14) 
+
+pal <- colorFactor(palette = c("red","blue"),
+      levels = coordinates$Category)
+
+m %>% clearBounds() %>% 
+  addCircleMarkers(radius = 5, color = ~pal(Category)) %>% 
+  addPopups(popup = paste0("<b>",coordinates$Location,"</b>")) %>% 
+  addLegend(position = "bottomright", pal = pal, 
+  values = coordinates$Category) %>% addResetMapButton()
+
+```
+
+
+### **DAY 1** 
+
+FINE TIME staff will welcome the group at Barcelona airport and transfer the group to the chosen hotel. 
+
+If it is possible we will do the check in or we left the luggage in hotel reception until check in time. Meanwhile, our staff will guide the group until city centre meeting points until the lunch place, a traditional restaurant **"Raco de Nuria"**, which is located at the entrance of Las Ramblas. 
+
+#### **RACO DE NURIA**
+
+* **Location:** Barcelona city centre
+* **Cuisine** Tapas, Mediterranean Flavour
+* **Capacity** First floor 70 pax
+
+
+In classical mythology, Bacchus was the god of wine, ritual madness and religious ecstasy. That's why at this restaurant, will raise you up a few metres above street level. To be precise, the first floor above La Rambla where it merges with Plaça Catalunya.
+
+Down below... the world, the lights, the hustle-and-bustle and the everyday comings and goings of Barcelona. Up above... the pleasure of flavours, smells, colours, ingredients and serenity.
+
+A simply divine location, menu and space.
+
+<img src = "https://media-cdn.tripadvisor.com/media/photo-s/12/4e/60/ef/raco-del-nuria.jpg">
+
+Once the group finish the lunch, we will guide the group until the **bike tour** staring point, where the guets will discover some secret places in the heart of the city. 
+
+#### **EBIKE BARCELONA**
+
+* **Duration:** 3 hours
+* **Location:** Barcelona city centre
+* **Minimum 10 pax - Máximum 100 pax**
+* **Included:** 1 English speaking guide each 15-18 pax; helmet and Mineral water
+
+The tour will start and finish next to Barcelona cathedral in Barcelona city center
+The group will travel back in time to discover an unknown side of Barcelona through the eyes of Picasso, the most famous painter of the 20th century,
+The city he fell in love with when he was just a teenager is still alive in his paintings and in its streets.
+We will get on the eBikes and stroll around the alleys of the Gothic and Born quarters to follow his footsteps. Then, we will pass the exotic 19th-century Park de la Ciutadella from where we will bike straight to Barceloneta beach. On a bike lane beneath palm trees next to the beach, we will cross the Old Port back to the Old Town.
+
+While riding through old backstreets and modern neighborhoods the grooup will get to know some of the most vivid contrasts that Barcelona has to offer. And by the end of the tour, they will have the impression to have experienced the changes Barcelona has gone through and have felt at the same time the exciting city Picasso used to know.
+
+Possible route of the tour: 
+<img src = "https://www.barcelonaebikes.com/wp-content/uploads/2016/03/pl%C3%A0nol-bohemian-eBike-low-1030x728.jpg">
+
+<img src = "https://happytovisit.com/glib/3/barcelona-ebike-tour-4-7202.png">
+
+
+After the tour we will come back to the hotel and have some free time for refresh until dinner time. 
+
+For dinner, we will go to one of the best of the traditional restaurants of the area, located just few minutes walk from offered hotels, this is the restaurant **Casa Carmen** 
+
+#### **RESTAURANT CASA CARMEN**
+
+* **Location:** City centre - next to Paseo de Gracia 
+* **Cuisine**  Mediterranean Flavour and fusion cooking
+* **Capacity** Ground floor groups up to 25 people. First floor different pannelable rooms from 20 to 40 people each. 
+
+**Casa Carmen** is a young, dynamic and continuously growing restaurant group that already has establishments in Madrid, Seville and Barcelona. 
+
+**Casa Carmen** arrives at Barcelona's city center in 2017 with a very attractive proposal: a Mediterranean menu with both traditional and innovative dishes at affordable prices. In addition, it also has an interesting selection of tapas and dishes perfect to share. The restaurant, very cozy, is divided into two floors and has different spaces
+
+<img src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/7f/38/46/casa-carmen-restaurant.jpg" width="360">
+<img src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/81/6e/52/casa-carmen-restaurant.jpg" width="360" align="right">
+
+<img src = "https://u.tfstatic.com/restaurant_photos/555/318555/169/612/casa-carmen-passeig-de-gracia-casa-carmen-passeig-de-gracia-1-1dd47.jpg">
+
+
+### **DAY 2** 
+
+After breakfast, we will do check out and our bus will be waiting for us next to the hotel door. We will depart, direction to **Montserrat Mountains** where we will visit one of the most traditional and high quality winery of Catalonia: **Bodegas Abadal** 
+
+#### **ABADAL**
+
+* **Location** Next to Montserrat Mountains 
+* **Duration** 2 hours including brunch plus transfer time 
+* **Capacity** Minimum 10pax - maximum 150pax 
+* **Included** Bus, winery visit, wine tasting and brunch. 
+
+for this group, we have selected a **Gourmet tour** this gourmet tour includes: 
+
+* A private tour of the **Masia Roqueta farmhouse**, which dates back to the **XII century**. The group will go deep into the basement of the house and explore its old cellar, which has been restored to its original state. It is the jewel in the crown of wine history and culture in this region. It is a tour that will take the groui back in time 
+
+* A tour of the **Museum of Industry and transport**. This is the family's privately-owned collection, which is dedicated to transport. It includes a display of carriages, old trucks and tools that were used to make wine in the past 
+
+* A **privat tour of the winery and the wine-ageing cellar** where Abadal wines are made today 
+
+* Guided tasting session of high-end Abadal wines 
+
+* Homemade brunch in an exclusive venue 
+
+<img src = "http://www.jdcermeron.es/web/wp-content/uploads/2013/11/wpid2039-Abadal-008.jpg" width="360">
+<img src = "https://www.cargowine.com.es/tpv/app/files/ga_140-1.jpg" width="360" align="right">
+
+<img src = "http://abadal.net/wp-content/uploads/2018/11/Sopar-Most_OK.jpg">
+
+
+After the wine tasting, we will take our bus, which transfer the group back to Barcelona and we will see the city from a different point of view, from the air! 
+
+
+#### **BARCELONA FROM THE AIR**
+
+* **Duration:** 2,5H - 3 hours
+* **Location:** Barcelona cable cars
+* **Minimum 10 pax - Máximum 100 pax**
+* **Included:** 1 french speaking guide, a 30 seater coach at disposal for the activity, tickets for the 2 cable cars.  
+
+The bus will go trough the port area to **Montjuic** and the Olympic area seeing Palau Sant Jordi and the stadium, then they will stop at the Grey Cable car station. This **Cable car** will transfer guests to the Castle. Our guide will explain guests the history of all the area and the castle. From there they will walk to Miramar where they will find the Red Cable Car. This is the oldest cable car of the city and it offers a great panoramic view of the city - a unique experience -
+Each cable car is up to 18 pax - this cable car can’t be booked in advance or privatized. The **Red Cable Car** ends at the Old Port (is the same tower as the restaurant Torre de Alta Mar). Once everyone will be at Port Station they will be picked up by the bus that will transfer them to the hotel.
+
+<img src = "https://www.webarcelona.net/sites/default/files/teleferico-montjuic_0.jpg" width="360"> <img src = "https://www.lavanguardia.com/r/GODO/LV/p3/WebSite/2016/09/09/Recortada/LAVANGUARDIA_G_3640423-162-kxzD-U41198934917QR-992x558@LaVanguardia-Web.jpg" width="360" align="right">
+
+<img src = "https://media-edg.barcelona.cat/wp-content/uploads/2015/05/1-2-3-2-10-DISE-Vista-panor%C3%A0mica-de-Barcelona-10-3-14-HEMAV-12.jpg">
+
+
+For dinner, we will transfer the group until Barceloneta Beach, where they will enjoy the dinner next to the Mediterranean Sea in a restaurant inspirated in Mediterranean and Italian cuisine: **Mamarosa Beach**
+
+#### **MAMAROSA BEACH**
+
+* **Location:**Barceloneta beach - Below W hotel  
+* **Cuisine:** Italian cuisine, with seasonal products
+* **Capacity:** 120 seatead people in main dinging room and covered terrace 
+
+Idyllically located in front of the beach, in the basement of the Hotel W Barcelona, Mamarosa Beach is an ideal option at any time.
+
+The space has a large terrace and an interior dining room perfect for group dinners and all kinds of events. The restaurant has been decorated with taste and adapts wisely at every moment of the day. At noon, the atmosphere is familiar and relaxed; At night, Mamarosa Beach transforms into a vibrant place with cocktails and lively music.
+
+The cuisine is Mediterranean with Italian influences and is made with fresh and natural ingredients. In addition, since the beginning of 2018 the restaurant has added a sushi and sashimi menu to its offer
+
+<img src = "http://www.mamarosabeach.com/wp-content/uploads/mamarosabeach-home-23.jpg">
+
+
+### **DAY 3** 
+
+After breakfast and check out, the group will be tranfered by bus to the airport for departures. 
+
+END OF THE PROGRAMME
+
+*****
+
+
+## Terms & Conditions
+
+  * Rates valid for 2019.
+  
+  * For a group of minimum 10 pax.
+  
+  * VAT included. 
+  
+  * No reservation has been done. Availability upon request.
+  
+*****

@@ -1,0 +1,51 @@
+---
+title: ""
+author: ""
+date: ''
+output:
+ 
+  html_document:
+    css: FORMATO1.css
+    fig_width: 8
+    fig_height: 8
+    highlight: textmate
+    theme: cosmo
+    
+
+---
+
+
+
+## Budget
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+library(readxl)
+library(dplyr)
+library(knitr)
+library(kableExtra)
+
+budget <- read_excel("timeline.xlsx", sheet = "Sheet2", 
+    col_types = c("date", "text", "text", 
+        "numeric", "text", "numeric", "numeric"))
+budget$DATE <- as.Date(budget$DATE) %>% format("%b/%d")
+
+
+table <- budget[,c(1,3:7)] 
+table$Total <- paste('€',formatC(table$Total, big.mark=',', format = NULL ))
+table$withVAT <- paste('€',formatC(table$withVAT, big.mark=',', format = NULL ))
+table <- sapply(table,as.character)
+table[is.na(table)] <- " "
+
+
+table %>%  
+  kable() %>% kable_styling(bootstrap_options = c("striped","condensed","responsive"),font_size = 10, fixed_thead = list(enabled=T, background="#EF8319")) %>% column_spec(6, 
+bold = T, width = "2cm") %>% 
+  row_spec(nrow(table), bold = T, color = "black", background ="#EF8319")
+
+
+```
+
+
+
+

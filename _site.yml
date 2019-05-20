@@ -1,0 +1,8 @@
+name: "my-website"
+navbar:
+  title: "FINE TIME"
+  left:
+    - text: "Quotation"
+      href: index.html
+    - text: "Budget"
+      href: about.html
